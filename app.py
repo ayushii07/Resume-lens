@@ -4,9 +4,7 @@ from pdf2image import convert_from_bytes
 from dotenv import load_dotenv
 import os
 
-# ==========================================
-# PAGE CONFIG
-# ==========================================
+
 
 st.set_page_config(
     page_title="AI Resume Intelligence Platform",
@@ -14,9 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# ==========================================
-# CUSTOM CSS
-# ==========================================
+
 
 st.markdown("""
 <style>
@@ -122,9 +118,7 @@ html, body, [class*="css"] {
 </style>
 """, unsafe_allow_html=True)
 
-# ==========================================
-# LOAD API
-# ==========================================
+
 
 load_dotenv()
 
@@ -134,9 +128,7 @@ genai.configure(
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
-# ==========================================
-# HERO SECTION
-# ==========================================
+
 
 st.markdown("""
 <div class="hero">
@@ -147,9 +139,7 @@ AI-powered ATS resume analyzer , Get instant ATS insights with Resume Lens. Uplo
 </div>
 """, unsafe_allow_html=True)
 
-# ==========================================
-# FEATURE CARDS
-# ==========================================
+
 
 c1,c2,c3,c4,c5 = st.columns(5)
 
@@ -195,9 +185,7 @@ with c5:
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ==========================================
-# INPUT SECTION
-# ==========================================
+
 
 left,right = st.columns(2)
 
@@ -215,9 +203,7 @@ with right:
         height=250
     )
 
-# ==========================================
-# PDF PROCESSING
-# ==========================================
+
 
 def input_pdf_setup(uploaded_file):
 
@@ -233,9 +219,6 @@ def input_pdf_setup(uploaded_file):
 
     return images[0]
 
-# ==========================================
-# GEMINI
-# ==========================================
 
 def get_gemini_response(prompt, pdf_content, job_description):
 
@@ -249,9 +232,7 @@ def get_gemini_response(prompt, pdf_content, job_description):
 
     return response.text
 
-# ==========================================
-# MASTER PROMPT
-# ==========================================
+
 
 master_prompt = """
 You are an expert ATS system, HR recruiter,
@@ -297,17 +278,12 @@ Provide:
 Format professionally.
 """
 
-# ==========================================
-# ANALYZE BUTTON
-# ==========================================
 
 st.markdown("<br>", unsafe_allow_html=True)
 
 analyze = st.button("🚀 Analyze Resume")
 
-# ==========================================
-# RESULTS
-# ==========================================
+
 
 if analyze:
 
@@ -344,9 +320,6 @@ if analyze:
 
     st.success("Analysis Completed Successfully ✅")
 
-# ==========================================
-# FOOTER
-# ==========================================
 
 st.markdown("<br><br>", unsafe_allow_html=True)
 

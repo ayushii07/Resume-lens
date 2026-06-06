@@ -5,6 +5,12 @@ Resume Lens is an AI-powered Applicant Tracking System (ATS) analyzer that helps
 Built using Google Gemini and Streamlit, the platform provides detailed ATS insights, keyword gap analysis, interview preparation assistance, skill gap detection, and personalized resume improvement recommendations.
 
 ---
+## Live Demo
+
+🚀 Try Resume Lens Here:
+
+https://your-streamlit-app-url.streamlit.app
+
 
 ## Features
 
