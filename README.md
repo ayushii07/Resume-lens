@@ -118,7 +118,7 @@ ATS Analysis Engine
 
 ### Analysis dashboard
 
-![Analysis dashboard](Screenshots/analysis_dashboard.png)
+![Analysis dashboard](screenshots/analysis_dashboard.png)
 
 ### SkillGap Analysis
 
