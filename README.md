@@ -8,8 +8,7 @@ Built using Google Gemini and Streamlit, the platform provides detailed ATS insi
 ## Live Demo
 
 🚀 Try Resume Lens Here:
-
-https://your-streamlit-app-url.streamlit.app
+https://resume-lens-7ykzqcjxjsshsio4eo8aiz.streamlit.app/
 
 
 ## Features
