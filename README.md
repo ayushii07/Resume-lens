@@ -110,19 +110,27 @@ ATS Analysis Engine
 
 ### Home Page
 
-![Home Page](screenshots/home_page.png)
+![Home Page](screenshots/Home_page.png)
+
 ![Home Page](screenshots/home_pagee.png)
 
 
-### Keyword Analysis
 
-![Analysis dashboard](screenshots/Analysis_dashboard.png)
+### Analysis dashboard
 
-![Analysis dashboard](screenshots/SkillGap_Analysis.png)
+![Analysis dashboard](Screenshots/Analysis_dashboard.png)
+
+### SkillGap Analysis
+
+![SkillGap_Analysis](screenshots/SkillGap_Analysis.png)
+
+### missing words
 
 ![missing words](screenshots/missing_words.png)
 
-![improvs](screenshots/improv_test.png)
+### Interview prep
+
+![Interview prep](screenshots/interview_prep.png)
 
 
 
